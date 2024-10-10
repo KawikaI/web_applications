@@ -1,0 +1,15 @@
+
+<header>
+    <a href="{% url 'home' %}">Home</a> |
+    <a href="{% url 'about' %}">About</a>
+</header>
+
+<!-- base.html -->
+
+<nav>
+    <ul>
+        <li><a href="{% url 'products' %}">Products</a></li>
+    </ul>
+</nav>
+
+{% block content %}{% endblock %}
