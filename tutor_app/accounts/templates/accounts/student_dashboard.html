@@ -1,0 +1,7 @@
+<h2>Welcome, {{ user.username }}!</h2>
+<p>Teaching Assistants available:</p>
+<ul>
+    {% for ta in tas %}
+        <li>{{ ta.user.username }} - Class: {{ ta.class_tutoring }} - Times: {{ ta.times_available }} - Days: {{ ta.days_available }}</li>
+    {% endfor %}
+</ul>
